@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Robot Base control</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+               <style>
+
+
+
+p{
+  text-align: center;
+  text-indent: 2px;
+}
+.right{
+  margin-left: 10px;
+}
+.left{
+  margin-right: 10px;
+}
+.btn {
+   background-color: #4CAF90;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  transition: width 0.3s ease-in;
+}
+.btn:hover {
+  width: 100px;
+}
+.stop{
+  width: 100px;
+  height: 60px;
+  background-color: darkcyan;
+  background-attachment:local;
+  border-radius: 60px;
+  color: rgb(224, 214, 214);
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s ease-in;
+}
+.button:hover {
+  background-color: #3a5bbe;
+}
+
+.button:active {
+background-color: rgb(248, 10, 10);
+box-shadow: 0 5px rgb(110, 25, 3);
+transform: translateY(4px);
+}
+
+.bt{
+
+  box-shadow: 0 5px rgb(66, 68, 68);
+  transform: translateY(4px);
+
+}
+.btt:active {
+  background-color: rgb(105, 102, 102);
+
+  transform: translateY(4px);
+  }
+
+
+</style>
+
+    </head>
+    <body>
+
+   <h1> Robot Base control <br>
+ <form action="connectionArm.php" method="post">
+<center><div>
+
+
+        <button type="submit" class="btn bt btt" name="Forward" value="Forward"> <h2> Forward </h2> </button><br><br><br>
+        <button type="submit" class="btn bt btt left" name="left"> Left  </button>
+        <button type="submit" class="stop button " name="stop">STOP</button>
+        <button type="submit" class="btn bt btt right" name="right">Right </button><br><br>
+      ‎<button type="submit" class="btn bt btt" name="backward"><h2> </h2> Backward </button>
+</div> </center>
+</form>
+<br>
+
+
+
+</body>
+</html>
